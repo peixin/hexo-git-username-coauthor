@@ -1,0 +1,52 @@
+{
+  "name": "hexo-git-username-coauthor",
+  "version": "0.0.1",
+  "description": "Give your post an default coauthor from git user name!",
+  "scripts": {
+    "eslint": "eslint .",
+    "test": "jest",
+    "test-cover": "jest --coverage",
+    "build": "babel src --out-dir build",
+    "ci": "yarn eslint && yarn test-cover"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Peixin Liu",
+    "email": "fengyi.mail@@gmail.com",
+    "url": "https://github.com/peixin"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.2",
+    "hexo": "^4.0.0",
+    "jest": "^24.9.0"
+  },
+  "main": "build/index.js",
+  "files": [
+    "build/"
+  ],
+  "bundleDependencies": false,
+  "homepage": "https://github.com/peixin/hexo-git-username-coauthor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peixin/hexo-git-username-coauthor.git"
+  },
+  "keywords": [
+    "hexo",
+    "coauthor",
+    "author",
+    "username",
+    "git",
+    "multiple"
+  ],
+  "bugs": {
+    "url": "https://github.com/peixin/hexo-git-username-coauthor/issues"
+  }
+}
