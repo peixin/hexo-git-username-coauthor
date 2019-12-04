@@ -1,10 +1,6 @@
 # hexo-git-username-coauthor
 
-
-git config --global user.name
-
-[![Build Status](https://github.com/peixin/hexo-git-username-coauthor/workflows/Build/badge.svg)](https://github.com/peixin/hexo-git-username-coauthor/workflows/Build/badge.svg)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![Build Status](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg)](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![Coverage Status](https://coveralls.io/repos/github/peixin/hexo-git-username-coauthor/badge.svg?branch=master)](https://coveralls.io/github/peixin/hexo-git-username-coauthor?branch=master)
 
 Coauthor from git global username plugin for [Hexo](http://hexo.io/).
 
@@ -33,6 +29,10 @@ date: 2016-05-20 16:20
 coauthor: liupeixin
 ---
 ```
+
+## And Then
+After generate coauthor property,  you can use like [hexo-next-coauthor](https://github.com/theme-next/hexo-next-coauthor) theme to show coauthor.
+
 
 ## License
 

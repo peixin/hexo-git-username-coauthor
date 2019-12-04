@@ -1,0 +1,42 @@
+name: build
+
+on: ["push", "pull_request"]
+  branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: Cache NPM dependencies
+        id: cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Build
+        run: |
+          yarn ci-build
+
+      - name: Coveralls
+          uses: coverallsapp/github-action@master
+          with:
+            path-to-lcov: ./coverage/lcov.info
+            github-token: ${{ secrets.GITHUB_TOKEN }}
