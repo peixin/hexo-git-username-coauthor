@@ -37,6 +37,6 @@ jobs:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Build & Publish
-          run: |
-            yarn ci-build
-            yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
+        run: |
+          yarn ci-build
+          yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version

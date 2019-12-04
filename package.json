@@ -6,9 +6,8 @@
     "eslint": "eslint .",
     "test": "jest",
     "test-cover": "jest --coverage",
-    "check": "yarn eslint && yarn test-cover",
     "build": "babel src --out-dir build",
-    "ci-build": "yarn check && yarn build"
+    "ci-build": "yarn eslint && yarn test-cover && yarn build"
   },
   "license": "MIT",
   "author": {
