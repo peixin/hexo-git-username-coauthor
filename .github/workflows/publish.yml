@@ -36,7 +36,11 @@ jobs:
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::$(echo ${GITHUB_REF:11})
+
       - name: Build & Publish
         run: |
           yarn ci-build
-          yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
+          yarn publish --new-version ${{ steps.vars.outputs.tag }} --no-git-tag-version
