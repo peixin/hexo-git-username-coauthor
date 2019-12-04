@@ -1,6 +1,6 @@
 # hexo-git-username-coauthor
 
-[![Build Status](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg)](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![Coverage Status](https://coveralls.io/repos/github/peixin/hexo-git-username-coauthor/badge.svg?branch=master)](https://coveralls.io/github/peixin/hexo-git-username-coauthor?branch=master)
+[![Build Status](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg)](https://github.com/peixin/hexo-git-username-coauthor/workflows/build/badge.svg) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![Coverage Status](https://coveralls.io/repos/github/peixin/hexo-git-username-coauthor/badge.svg?branch=master)](https://coveralls.io/github/peixin/hexo-git-username-coauthor?branch=master) [![npm version](https://badge.fury.io/js/hexo-git-username-coauthor.svg)](https://badge.fury.io/js/hexo-git-username-coauthor)
 
 Coauthor from git global username plugin for [Hexo](http://hexo.io/).
 
